@@ -15,6 +15,10 @@ A modern weather application built with React and TypeScript that provides real-
 - 🔄 Loading states with visual feedback
 - 📱 Responsive design for all devices
 
+## Screenshots
+
+![Weather App Interface](Screen%20Shot%202025-06-16%20at%209.22.11%20PM.png)
+
 ## Tech Stack
 
 - React
@@ -41,15 +45,13 @@ yarn install
 ```bash
 cd weather-app
 npm start
-# or
-yarn start
 ```
 
 5. Start the activity suggestion server (in a separate terminal):
 ```bash
 cd server
 npm install
-npm start
+npm run dev
 ```
 
 The Client will be available at `http://localhost:3000` and the server will be running at `http://localhost:3001`
