@@ -27,7 +27,7 @@ A modern weather application built with React and TypeScript that provides real-
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/dshoen619/Weather_Site.git
 ```
 
 2. Install dependencies:
@@ -57,17 +57,27 @@ The Client will be available at `http://localhost:3000` and the server will be r
 ## Project Structure
 
 ```
-weather-app/
-├── src/
-│   ├── api.ts              # API configuration and functions
-│   ├── App.tsx            # Main application component
-│   ├── App.css            # Main styles
-│   ├── types/
-│   │   └── interfaces.ts  # TypeScript interfaces
-│   ├── json/
-│   │   ├── city_country_list.json  # City data
-│   │   └── descriptions.json       # Weather descriptions mapping
-│   └── photos/            # Weather background images
-├── public/
-└── package.json
+Weather_Site/
+├── weather-app/           # React client application
+│   ├── src/
+│   │   ├── api.ts              # API configuration and functions
+│   │   ├── App.tsx            # Main application component
+│   │   ├── App.css            # Main styles
+│   │   ├── types/
+│   │   │   └── interfaces.ts  # TypeScript interfaces
+│   │   ├── json/
+│   │   │   ├── city_country_list.json  # City data
+│   │   │   └── descriptions.json       # Weather descriptions mapping
+│   │   └── photos/            # Weather background images
+│   ├── public/
+│   └── package.json
+│
+├── server/                # Node.js server for activity suggestions
+│   ├── src/
+│   │   └── server.js     # Server implementation
+│   └── package.json
+│
+└── json/                 # Shared JSON data and processing
+    ├── city_country_list.json  # Master city data file
+    └── main.py           # Python script for processing city data that will be used for the user search
 ```
