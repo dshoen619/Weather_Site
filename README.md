@@ -47,6 +47,9 @@ cd weather-app
 npm start
 ```
 
+4. Enter the OpenAI Key:
+Go to functions.js. Enter the API Key on line 4.
+
 5. Start the activity suggestion server (in a separate terminal):
 ```bash
 cd server
